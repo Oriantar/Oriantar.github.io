@@ -9,7 +9,9 @@ src: url("../FONTS/JerseyM54-alX9.ttf");
 .Minecraft{
   font-family: "Minecraft"
 }
-
+article > figure > .Minecraft{
+  margin-top: 4%;
+}
 *{
   margin: 0;
   padding: 0;
