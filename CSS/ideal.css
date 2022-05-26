@@ -1,0 +1,62 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  display:grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  grid-template-areas:
+  "header main ."
+  "footer . .";
+  font-size: 16px;
+  font-family: "Roleway", sans-serif;
+  box-sizing: border-box;
+}
+
+main{
+  display:grid;
+  grid-area: main;
+
+
+
+}
+header{
+  grid-area: header;
+
+}
+footer{
+  grid-area: footer;
+  padding: 10%;
+}
+
+
+figure{
+  align-self: center;
+  align-content: center;
+}
+
+figure > img {
+
+  width: 70%;
+  height: 110%;
+}
+
+main > figure > img{
+  margin: 1%;
+}
+main > figure > figcaption{
+  margin: 1%;
+  padding: 10%;
+}
+header > figure > img{
+  width: 20%;
+  height: 50%;
+}
+@media only screen and (max-width:800px){
+  body{
+  grid-template-columns: repeat(1,minmax(0,1fr));}
+  figure > img{
+    height: 200%;
+    width: 100%;
+  }
+}

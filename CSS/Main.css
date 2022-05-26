@@ -1,0 +1,306 @@
+@font-face {
+font-family: "Minecraft";
+src: url("../FONTS/Minecraft.ttf");
+}
+@font-face {
+font-family: "Jersey";
+src: url("../FONTS/JerseyM54-alX9.ttf");
+}
+.Minecraft{
+  font-family: "Minecraft"
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+body{
+
+  font-size: 16px;
+  font-family: "Roleway", sans-serif;
+  box-sizing: border-box;
+  background: url("../IMAGES/bg-wool-dark.png");
+}
+.webshopbody{
+  background: url("../IMAGES/bg-wood.png")
+}
+.karaktersbody{
+  background: url("../IMAGES/bg-stone.png")
+}
+main{
+  display:grid;
+  grid-template-columns: 1fr 2fr 1fr;
+
+}
+
+main > article{
+  display: grid;
+  grid-column-start: 2;
+
+
+}
+main > article > section{
+  grid-row-start: 1;
+  border-radius: 1%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+  background-color: white;
+  height: 90vh;
+
+}
+main > article > section > p{
+  margin-top: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 0.5%;
+}
+main > article > section > h1{
+  margin-top: 2%;
+  font-size: 180%;
+}
+.timer{
+  height: 10vh;
+}
+
+header{
+  height: 80vh;
+  background: url("../IMAGES/background.jpg") no-repeat center;
+  background-size: 100%;
+  background-color: black;
+
+}
+footer{
+  background-color: black;
+}
+
+ nav{
+   z-index: 999;
+  position:fixed;
+  background-color: #191919;
+  background-size: contain;
+  width: 100%;
+  height: 15%;
+  opacity: 0.9;
+}
+
+nav > ul > li > a{
+  background: none;
+  margin-top: 0%;
+  margin-left: 1%;
+  width: 20%;
+  padding: 2%;
+  border: none;
+  border-style: none;
+  opacity: 0.7;
+  color: gray;
+  font-size: 140%;
+  float: left;
+}
+nav > ul{
+  list-style-type: none;
+  list-style: none;
+}
+
+main > article > section > p{
+  text-align: center;
+
+}
+main > article > section > iframe{
+  width: 90%;
+  height: 60%;
+}
+
+nav > ul >  li > a{
+  width: 20%;
+  height: 20%;
+  margin-top: 1%;
+  text-decoration: none;
+}
+
+nav > ul >  li> a:hover{
+  opacity: 1;
+  color: white;
+  transform: scale(1.1);
+}
+.page{
+  opacity: 1;
+  color: white;
+  transform: scale(1.1);
+  font-family: Minecraft;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2%;
+  grid-auto-rows: 70vh;
+  color: white;
+  margin-bottom: 20%;
+}
+
+.grid > article{
+margin-top: 7%;
+display: grid;
+grid-column-start: auto;
+width: 80%;
+background-color: #191919;
+opacity: 0.6;
+margin-left: 4%;
+border-radius: 2%;
+}
+
+.grid > article > figure > img{
+  width: 30%;
+  margin: 40%;
+  margin-left: 34%;
+  margin-top: 30%;
+  position: relative;
+
+}
+.grid > article > figure > figcaption{
+  position: relative;
+  margin-left: 41%;
+  margin-top: -30%;
+
+}
+.grid > article > figure > .sale{
+  margin-left: 21%;
+}
+.invis{
+  visibility: hidden;
+}
+.grid > article:hover{
+ transform: scale(1.1);
+ opacity: 0.8;
+ background-color: #222222;
+ cursor: pointer;
+}
+
+.popup{
+  z-index: 1000;
+  display:none;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  opacity: 0.91;
+}
+.popup > article{
+  background-color: white;
+  opacity: 1;
+  height: 90%;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 2%;
+  border-radius: 2%;
+}
+.popup > article > section > h1{
+  font-family: "Minecraft";
+  padding-top: 4%;
+  text-align: center;
+  font-size: 250%;
+}
+.popup > article > section > p{
+  padding: 2%;
+  text-align: center;
+}
+h1{
+  margin-bottom: 5%;
+}
+.korting{
+  text-decoration: line-through;
+}
+.shoppingcart{
+  height: 20%;
+  width: 20%;
+  margin-left: 60%;
+  margin-top: 30%;
+}
+.shoppingcart:hover{
+  transform: scale(1.2);
+  transform: rotate(-45deg);
+  cursor:pointer;
+}
+.grid > article > figure{padding-left: 10%;}
+.grid > .webshoparticlee{grid-column-start: 2;}
+.grid > .webshoparticlee:hover{cursor:default;}
+.grid > .webshoparticle:hover{
+  cursor:default;
+}
+
+@media only screen and (max-width: 1400px){
+  main{
+    grid-template-columns: 2fr;
+  }
+  .grid{
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid > .webshoparticlee{grid-column-start:1;}
+}
+.shoppingcart{
+  margin-top: 10%;
+}
+@media only screen and (max-width: 1050px){
+  main{
+    grid-template-columns: 2fr;
+  }
+  .grid{
+    grid-template-columns: 1fr;
+  }
+.grid > article > figure > img{
+    margin-top: 5%;
+  }
+  .shoppingcart{
+    margin-top: -10%;
+  }
+}
+.a{
+  width: 150%;
+  height: 20%;
+  margin-left: 26%;
+  margin-top: 40%;
+  background-color: #F8F8F8;
+  font: bold 11px Arial;
+text-decoration: none;
+background-color: #EEEEEE;
+color: #333333;
+padding: 2px 6px 2px 6px;
+border-top: 1px solid #CCCCCC;
+border-right: 1px solid #333333;
+border-bottom: 1px solid #333333;
+border-left: 1px solid #CCCCCC;
+}
+a:hover{
+  cursor: pointer;
+}
+@media only screen and (max-width: 650px){
+  .popup > article{
+    width: 98%;
+    margin-left: 1%;
+  }
+  .a{
+    margin-top: 60%;
+  }}
+  @media only screen and (max-width: 476px){
+    nav > ul  > li > a{
+      float:none;
+    }
+    nav{
+      position: absolute;
+      height: 50%;
+    }
+    .grid > article{
+      height: 50%;
+    }
+    .a{
+      margin-top: 40%;
+      width: 111%;
+      margin-left: 25%;
+      height: 20%;
+
+    }
+    .shoppingcart{
+      margin-top: 10%;
+    }}
