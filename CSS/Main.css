@@ -247,7 +247,9 @@ h1{
   transform: rotate(-45deg);
   cursor:pointer;
 }
-.grid > article > figure{padding-left: 10%;}
+.grid > article > figure > .Winkelwagen{padding-left: 10%;
+margin-top:2%;}
+
 .grid > .webshoparticlee{grid-column-start: 2;}
 .grid > .webshoparticlee:hover{cursor:default;}
 .grid > .webshoparticle:hover{

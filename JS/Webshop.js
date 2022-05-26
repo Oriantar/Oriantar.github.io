@@ -85,7 +85,6 @@ var countDown = setInterval(function(){
   var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
   if(document.getElementById("timer") != null){
-    console.log("hoi");
   document.getElementById("timer").innerHTML = days + " dagen " + hours + " uur " + minutes + " minuten " + seconds + " seconden";}
 
 }, 1000)
