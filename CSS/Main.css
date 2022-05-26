@@ -57,9 +57,27 @@ main > article > section > p{
   padding-right: 2%;
   padding-top: 0.5%;
 }
+main > article > section > form > p{
+  margin-top: 2%;
+  margin-bottom: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 0.5%;
+}
+main > article > section > form > .submit{
+  height: 5vh;
+  background: black;
+  color: white;
+  border-radius: 6%;
+  width: 10vw;
+}
 main > article > section > h1{
   margin-top: 2%;
   font-size: 180%;
+}
+main > article > section > .drop{
+  font-family: "Minecraft";
+  margin-top: 15%;
 }
 .timer{
   height: 10vh;
